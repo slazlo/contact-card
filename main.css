@@ -11,7 +11,8 @@
 
 .profile-card {
   width: 500px;
-  max-width: calc(100vw - 10px);
+  max-width: 60%;
+  margin-top: auto;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   justify-content: center;
   background-image: url(assets/mezo.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .head, .links {
@@ -33,7 +35,7 @@ links {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 300%;
 }
 
 h1:hover {
@@ -41,20 +43,22 @@ h1:hover {
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 200%;
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 125%;
 }
 
 .head, .content {
-  width: 100%;
+  max-width: calc(100vw - 40px);
   margin: 5px 5px 5px 5px;
+  text-align: center;
 }
 
 .content {
   border-top: 1px solid hsla(0, 0%, 30%, 10);
+  padding: 5% 10% 5% 10%;
 }
 
 .head, .about {
@@ -62,16 +66,13 @@ p {
   margin-bottom: 10%;
 }
 
-.content {
-  padding: 5% 10%;
-}
-
 #profilkep {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  filter: saturate(320%);
+  filter: sepia(20%);
   transition: all 0.5s ease-in-out;
+  object-position: top;
 }
 
 img:hover {
@@ -83,6 +84,7 @@ img:hover {
   background-color: hsla(0, 0%, 100%, .5);
   border-radius: 90px;
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 700px;
+  max-width: 80%;
 }
 
 /* Contact links */
